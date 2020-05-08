@@ -18,7 +18,7 @@ footer {
 
     .footer__list {
         display: flex;
-        width: 135%;
+        width: 190%;
         margin: 1.5rem 0;
         justify-content: space-between;
        a {
@@ -36,10 +36,11 @@ footer {
         flex-direction: column;
         justify-content: center;
         font-size:.8em;
+        text-align: center;
         margin-bottom: 3rem;
         margin-top: 1em;
         h3 {
-            margin-bottom: 0;
+            margin-bottom: 1em;
         }
 
         p{
