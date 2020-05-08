@@ -9,6 +9,9 @@
     &__text {
         line-height: 1.5;
         margin-bottom: 1rem;
+        h1 {
+            font-weight: bold;
+        }
     }
     &__pic {
         background: url(/img/counter.jpg) center center/cover no-repeat;
@@ -25,6 +28,7 @@
         flex: 1;
         .homemain__hours__item {
             height: 8rem;
+            margin-right: 0.5rem;
         }
     }
     &__map {
@@ -39,4 +43,7 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: $textgrey;
     font-weight: 500;
+    @media screen and (max-width: 500px) {
+        font-size: 1rem;
+    }
 }
