@@ -3,7 +3,7 @@
     height: 15vh;
     width: 100%;
     @media screen and (max-width: 500px) {
-        height: 20vh;
+        height: 24vh;
     }
     &__overlay {
         display: flex;
@@ -12,6 +12,7 @@
         padding: 0.8rem;
         @media screen and (max-width: 500px) {
             flex-direction: column;
+            justify-content: space-between;
         }
         &_logo {
             background: url(/img/logo.svg) center center/cover no-repeat;
