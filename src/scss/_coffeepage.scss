@@ -1,0 +1,55 @@
+.coffeemain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 70vh; */
+    width: 80%;
+    align-items: flex-start;
+    margin: auto;
+    &__text {
+        line-height: 1.5;
+        margin: 1rem;
+        @media screen and (max-width: 500px) {
+            margin: 0.2rem;
+            list-style: 1;
+        }
+        .sm {
+            font-size: 0.7rem;
+            margin-top: 0.3rem;
+        }
+    }
+    &__display {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        &__item {
+            width: 20rem;
+            margin: 0 0 3rem 0;
+            height: 35rem;
+            @media screen and (max-width: 500px) {
+                margin-bottom: 1.5rem;
+                height: 32rem;
+            }
+            h2 {
+                background-color: $lightgrey;
+                padding: 0.5rem;
+            }
+            .display-item-pic {
+                background: url(/img/smcr-quejina.jpg) center center/cover no-repeat;
+                height: 20rem;
+                background-color: $lightgrey;
+            }
+            .display-item-text {
+                background-color: $lightgrey;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 0.5rem;
+                p {
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+}

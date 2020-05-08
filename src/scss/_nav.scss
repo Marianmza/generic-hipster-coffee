@@ -1,21 +1,36 @@
 .nav {
     background-color: $lightgrey;
     height: 15vh;
+    width: 100%;
+    @media screen and (max-width: 500px) {
+        height: 24vh;
+    }
     &__overlay {
         display: flex;
         align-items: center;
         justify-content: space-around;
         padding: 0.8rem;
+        @media screen and (max-width: 500px) {
+            flex-direction: column;
+            justify-content: space-between;
+        }
         &_logo {
             background: url(/img/logo.svg) center center/cover no-repeat;
-            height: 8rem;
-            width: 8rem;
+            height: 6rem;
+            width: 6rem;
+            @media screen and (max-width: 500px) {
+                height: 3rem;
+                width: 3rem;
+            }
         }
         &_list {
             ul {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                @media screen and (max-width: 500px) {
+                    flex-direction: column;
+                }
                 li {
                     list-style: none;
                     margin: 0 1rem;
